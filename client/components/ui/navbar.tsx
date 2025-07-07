@@ -8,8 +8,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="bg-navbar-background border-b border-navbar-border px-8 py-6 flex justify-between items-center">
-      {/* Logo */}
+    <nav className="bg-navbar-background border-b border-navbar-border px-8 py-6 flex justify-between items-center relative">
       <div className="flex items-center gap-2">
         <svg
           className="w-8 h-8 flex-shrink-0"
@@ -60,12 +59,6 @@ export function Navbar() {
         </span>
       </div>
 
-      {/* Desktop Menu - Hidden on mobile, can be extended later */}
-      <div className="hidden md:flex items-center gap-8">
-        {/* Add navigation items here when needed */}
-      </div>
-
-      {/* Mobile Menu Button */}
       <button
         onClick={toggleMenu}
         className="text-white p-1 hover:bg-white/10 rounded transition-colors"
@@ -89,12 +82,10 @@ export function Navbar() {
         </svg>
       </button>
 
-      {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-navbar-background border-b border-navbar-border md:hidden">
+        <div className="absolute top-full left-0 right-0 bg-navbar-background border-b border-navbar-border z-50">
           <div className="px-8 py-4">
-            {/* Add mobile navigation items here when needed */}
-            <div className="text-navbar-text">Menu items can be added here</div>
+            <div className="text-navbar-text">Navigation menu</div>
           </div>
         </div>
       )}
