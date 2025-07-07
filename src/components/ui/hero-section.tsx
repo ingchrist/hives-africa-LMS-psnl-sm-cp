@@ -58,10 +58,21 @@ export function HeroSection() {
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute right-[-1504px] bottom-[-13px] w-[1496px] h-[647px] opacity-23 bg-gradient-radial from-[#A2EB2A] to-transparent" />
+      <div
+        className="absolute w-[1496px] h-[647px] opacity-23"
+        style={{
+          right: "-1504px",
+          bottom: "-13px",
+          background:
+            "radial-gradient(50% 50% at 50% 50%, #A2EB2A 0%, rgba(0, 54, 31, 0.00) 100%)",
+        }}
+      />
 
       {/* Main Content */}
-      <div className="relative z-10 px-8 pt-18 pb-24 flex flex-col justify-end items-start gap-11 min-h-screen max-w-none">
+      <div
+        className="relative z-10 px-8 pt-18 pb-24 flex flex-col justify-end items-start gap-11 min-h-screen w-full"
+        style={{ padding: "72px 32px 96px 32px" }}
+      >
         <div className="flex flex-col items-start gap-11 w-full">
           {/* Brief Section */}
           <div className="flex flex-col items-start gap-5 w-full">
