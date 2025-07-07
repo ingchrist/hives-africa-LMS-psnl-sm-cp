@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/ui/hero-section";
 import { GrowSection } from "@/components/ui/grow-section";
 import { CoursesSection } from "@/components/ui/courses-section";
 import { ContainerStats } from "@/components/ui/container-stats";
+import { FeaturesSection } from "@/components/ui/features-section";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <GrowSection />
       <CoursesSection />
       <ContainerStats />
+      <FeaturesSection />
     </>
   );
 }
