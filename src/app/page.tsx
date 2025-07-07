@@ -5,6 +5,7 @@ import { ContainerStats } from "@/components/ui/container-stats";
 import { FeaturesSection } from "@/components/ui/features-section";
 import { CommunitySection } from "@/components/ui/community-section";
 import { TestimonialSection } from "@/components/ui/testimonial-section";
+import { FAQSection } from "@/components/ui/faq-section";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <FeaturesSection />
       <CommunitySection />
       <TestimonialSection />
+      <FAQSection />
     </>
   );
 }
