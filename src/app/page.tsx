@@ -3,6 +3,7 @@ import { GrowSection } from "@/components/ui/grow-section";
 import { CoursesSection } from "@/components/ui/courses-section";
 import { ContainerStats } from "@/components/ui/container-stats";
 import { FeaturesSection } from "@/components/ui/features-section";
+import { CommunitySection } from "@/components/ui/community-section";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <CoursesSection />
       <ContainerStats />
       <FeaturesSection />
+      <CommunitySection />
     </>
   );
 }
