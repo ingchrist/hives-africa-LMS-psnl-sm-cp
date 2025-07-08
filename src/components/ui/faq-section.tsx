@@ -2,36 +2,36 @@
 
 import React, { useState } from "react";
 
+const faqs = [
+  {
+    question: "What is AquilaCyberLMS?",
+    answer:
+      "AquilaCyberLMS is a comprehensive cybersecurity learning management system designed to provide hands-on training, structured learning paths, and community-driven education for cybersecurity professionals and enthusiasts of all levels.",
+  },
+  {
+    question: "How much does it cost to join?",
+    answer:
+      "We offer both free and premium tiers. The free tier includes access to basic courses and community features, while premium memberships unlock advanced labs, one-on-one mentorship, and exclusive content.",
+  },
+  {
+    question: "What makes AquilaCyberLMS different from other platforms?",
+    answer:
+      "Our platform combines gamified learning with real-world scenarios, offers direct access to cybersecurity experts, provides hands-on labs with vulnerable machines, and fosters a supportive community environment for collaborative learning.",
+  },
+  {
+    question: "Do I need prior experience in cybersecurity?",
+    answer:
+      "Not at all! Our platform is designed for learners at all levels. We offer beginner-friendly courses that start with the fundamentals and gradually progress to advanced topics. Our structured learning paths ensure you build knowledge systematically.",
+  },
+  {
+    question: "How do the hands-on labs work?",
+    answer:
+      "Our labs use dockerized vulnerable machines accessible through OpenVPN. This provides a safe, isolated environment where you can practice real-world cybersecurity techniques without any risk to external systems.",
+  },
+];
+
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const faqs = [
-    {
-      question: "What is AquilaCyberLMS?",
-      answer:
-        "AquilaCyberLMS is a comprehensive cybersecurity learning management system designed to provide hands-on training, structured learning paths, and community-driven education for cybersecurity professionals and enthusiasts of all levels.",
-    },
-    {
-      question: "How much does it cost to join?",
-      answer:
-        "We offer both free and premium tiers. The free tier includes access to basic courses and community features, while premium memberships unlock advanced labs, one-on-one mentorship, and exclusive content.",
-    },
-    {
-      question: "What makes AquilaCyberLMS different from other platforms?",
-      answer:
-        "Our platform combines gamified learning with real-world scenarios, offers direct access to cybersecurity experts, provides hands-on labs with vulnerable machines, and fosters a supportive community environment for collaborative learning.",
-    },
-    {
-      question: "Do I need prior experience in cybersecurity?",
-      answer:
-        "Not at all! Our platform is designed for learners at all levels. We offer beginner-friendly courses that start with the fundamentals and gradually progress to advanced topics. Our structured learning paths ensure you build knowledge systematically.",
-    },
-    {
-      question: "How do the hands-on labs work?",
-      answer:
-        "Our labs use dockerized vulnerable machines accessible through OpenVPN. This provides a safe, isolated environment where you can practice real-world cybersecurity techniques without any risk to external systems.",
-    },
-  ];
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);

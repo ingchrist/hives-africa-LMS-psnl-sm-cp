@@ -2,6 +2,31 @@
 
 import React, { useState } from "react";
 
+const footerSections = [
+  {
+    title: "Product",
+    links: [
+      "Courses",
+      "Learning Paths",
+      "Labs",
+      "Challenges",
+      "Certifications",
+    ],
+  },
+  {
+    title: "Resources",
+    links: ["Documentation", "Blog", "Community", "Support", "Help Center"],
+  },
+  {
+    title: "Community",
+    links: ["Discord", "Forums", "Events", "Leaderboards", "Mentorship"],
+  },
+  {
+    title: "Company",
+    links: ["About Us", "Careers", "Contact", "Press", "Partners"],
+  },
+];
+
 const Footer = () => {
   const [openSections, setOpenSections] = useState<{
     [key: string]: boolean;
@@ -13,31 +38,6 @@ const Footer = () => {
       [sectionName]: !prev[sectionName],
     }));
   };
-
-  const footerSections = [
-    {
-      title: "Product",
-      links: [
-        "Courses",
-        "Learning Paths",
-        "Labs",
-        "Challenges",
-        "Certifications",
-      ],
-    },
-    {
-      title: "Resources",
-      links: ["Documentation", "Blog", "Community", "Support", "Help Center"],
-    },
-    {
-      title: "Community",
-      links: ["Discord", "Forums", "Events", "Leaderboards", "Mentorship"],
-    },
-    {
-      title: "Company",
-      links: ["About Us", "Careers", "Contact", "Press", "Partners"],
-    },
-  ];
 
   return (
     <footer className="flex px-8 pt-8 pb-6 flex-col items-start gap-6 w-full bg-[#0D1117]">
