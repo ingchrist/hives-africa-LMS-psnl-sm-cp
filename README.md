@@ -1,4 +1,4 @@
-# Analytix Hive LMS - Authentication Setup Guide
+# Analytix Hive LMS - https://analytixhive.onrender.com
 
 This guide covers the complete setup and configuration of the aligned frontend and backend authentication system.
 
@@ -385,3 +385,6 @@ After setup, verify the following works:
 - [ ] Email verification flow completes successfully
 
 The authentication system is now fully aligned between frontend and backend, providing a secure and user-friendly experience.
+
+
+
